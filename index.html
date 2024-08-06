@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZIP Code Information</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="text-center p-8 bg-white rounded shadow-lg w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4">ZIP Code Information</h1>
+    <input
+      id="zipcode"
+      type="text"
+      placeholder="Enter ZIP code"
+      class="px-4 py-2 border border-gray-300 rounded w-full mb-4"
+    />
+    <button
+      id="fetch-info"
+      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+    >
+      Get Information
+    </button>
+    <div id="info-container" class="mt-4">
+      <p id="city" class="text-lg"></p>
+      <p id="county" class="text-lg"></p>
+      <p id="population" class="text-lg"></p>
+      <p id="error" class="text-red-500 mt-2"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
